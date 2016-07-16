@@ -12,7 +12,7 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/google/gopacket"
+	"github.com/Intrising/gopacket"
 )
 
 func decodePrismValue(data []byte, pv *PrismValue) {

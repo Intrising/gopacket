@@ -24,10 +24,9 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/Intrising/gopacket"
 	"golang.org/x/net/bpf"
 	"golang.org/x/sys/unix"
-
-	"github.com/google/gopacket"
 )
 
 /*

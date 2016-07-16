@@ -6,10 +6,11 @@
 package layers
 
 import (
-	"github.com/google/gopacket"
 	"net"
 	"reflect"
 	"testing"
+
+	"github.com/Intrising/gopacket"
 )
 
 // Test packet collected from live network. See the test below for contents

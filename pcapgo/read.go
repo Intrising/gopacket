@@ -7,17 +7,16 @@
 package pcapgo
 
 import (
+	"bufio"
+	"compress/gzip"
 	"encoding/binary"
 	"errors"
 	"fmt"
 	"io"
 	"time"
 
-	"bufio"
-	"compress/gzip"
-
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/layers"
+	"github.com/Intrising/gopacket"
+	"github.com/Intrising/gopacket/layers"
 )
 
 // Reader wraps an underlying io.Reader to read packet data in PCAP
