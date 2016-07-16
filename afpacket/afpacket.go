@@ -514,3 +514,7 @@ func (h *TPacket) WritePacketData(pkt []byte) error {
 	_, err := unix.Write(h.fd, pkt)
 	return err
 }
+
+func (h *TPacket) GetFd() C.int {
+	return h.fd
+}
