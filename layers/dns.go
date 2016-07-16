@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/google/gopacket"
+	"github.com/Intrising/gopacket"
 )
 
 type DNSClass uint16
