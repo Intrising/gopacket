@@ -515,6 +515,6 @@ func (h *TPacket) WritePacketData(pkt []byte) error {
 	return err
 }
 
-func (h *TPacket) GetFd() C.int {
-	return h.fd
+func (h *TPacket) GetFd() int {
+	return int(h.fd)
 }
