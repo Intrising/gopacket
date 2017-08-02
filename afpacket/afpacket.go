@@ -384,7 +384,11 @@ func (h *TPacket) getTPacketHeader() header {
 }
 
 func (h *TPacket) pollForFirstPacket(hdr header) error {
+	start := time.Now()
 	for hdr.getStatus()&C.TP_STATUS_USER == 0 {
+		if time.Since(start).Seconds() > 1 {
+			return errors.New("can not get status")
+		}
 		h.pollset.fd = h.fd
 		h.pollset.events = C.POLLIN
 		h.pollset.revents = 0
