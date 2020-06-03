@@ -9,12 +9,13 @@ package tcpreader
 import (
 	"bytes"
 	"fmt"
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/layers"
-	"github.com/google/gopacket/tcpassembly"
 	"io"
 	"net"
 	"testing"
+
+	"github.com/Intrising/gopacket"
+	"github.com/Intrising/gopacket/layers"
+	"github.com/Intrising/gopacket/tcpassembly"
 )
 
 var netFlow gopacket.Flow

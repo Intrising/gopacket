@@ -15,13 +15,14 @@ package main
 
 import (
 	"flag"
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/examples/util"
-	"github.com/google/gopacket/layers"
-	"github.com/google/gopacket/pcap"
-	"github.com/google/gopacket/tcpassembly"
 	"log"
 	"time"
+
+	"github.com/Intrising/gopacket"
+	"github.com/Intrising/gopacket/examples/util"
+	"github.com/Intrising/gopacket/layers"
+	"github.com/Intrising/gopacket/pcap"
+	"github.com/Intrising/gopacket/tcpassembly"
 )
 
 var iface = flag.String("i", "eth0", "Interface to get packets from")

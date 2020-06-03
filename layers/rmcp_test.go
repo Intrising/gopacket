@@ -10,7 +10,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/google/gopacket"
+	"github.com/Intrising/gopacket"
 )
 
 func TestRMCPDecodeFromBytes(t *testing.T) {

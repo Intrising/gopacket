@@ -8,8 +8,9 @@
 package layers
 
 import (
-	"github.com/google/gopacket"
 	"testing"
+
+	"github.com/Intrising/gopacket"
 )
 
 // testPacketICMPv6RouterAdvertisement is the packet:

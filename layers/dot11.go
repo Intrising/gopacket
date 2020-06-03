@@ -16,7 +16,7 @@ import (
 	"hash/crc32"
 	"net"
 
-	"github.com/google/gopacket"
+	"github.com/Intrising/gopacket"
 )
 
 // Dot11Flags contains the set of 8 flags in the IEEE 802.11 frame control
@@ -1280,8 +1280,10 @@ func decodeDot11DataCFPollNoData(data []byte, p gopacket.PacketBuilder) error {
 	return decodingLayerDecoder(d, data, p)
 }
 
-func (m *Dot11DataCFPollNoData) LayerType() gopacket.LayerType  { return LayerTypeDot11DataCFPollNoData }
-func (m *Dot11DataCFPollNoData) CanDecode() gopacket.LayerClass { return LayerTypeDot11DataCFPollNoData }
+func (m *Dot11DataCFPollNoData) LayerType() gopacket.LayerType { return LayerTypeDot11DataCFPollNoData }
+func (m *Dot11DataCFPollNoData) CanDecode() gopacket.LayerClass {
+	return LayerTypeDot11DataCFPollNoData
+}
 func (m *Dot11DataCFPollNoData) DecodeFromBytes(data []byte, df gopacket.DecodeFeedback) error {
 	return m.Dot11Data.DecodeFromBytes(data, df)
 }
@@ -1339,8 +1341,10 @@ func decodeDot11DataQOSDataCFAck(data []byte, p gopacket.PacketBuilder) error {
 	return decodingLayerDecoder(d, data, p)
 }
 
-func (m *Dot11DataQOSDataCFAck) LayerType() gopacket.LayerType     { return LayerTypeDot11DataQOSDataCFAck }
-func (m *Dot11DataQOSDataCFAck) CanDecode() gopacket.LayerClass    { return LayerTypeDot11DataQOSDataCFAck }
+func (m *Dot11DataQOSDataCFAck) LayerType() gopacket.LayerType { return LayerTypeDot11DataQOSDataCFAck }
+func (m *Dot11DataQOSDataCFAck) CanDecode() gopacket.LayerClass {
+	return LayerTypeDot11DataQOSDataCFAck
+}
 func (m *Dot11DataQOSDataCFAck) NextLayerType() gopacket.LayerType { return LayerTypeDot11DataCFAck }
 
 type Dot11DataQOSDataCFPoll struct {

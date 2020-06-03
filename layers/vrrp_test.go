@@ -6,8 +6,9 @@
 package layers
 
 import (
-	"github.com/google/gopacket"
 	"testing"
+
+	"github.com/Intrising/gopacket"
 )
 
 // vrrpPacketPriority100 is the packet:
